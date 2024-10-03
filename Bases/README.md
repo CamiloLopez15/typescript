@@ -15,3 +15,4 @@ Al tener este archivo nos permite ejecutar el comando `tsc` el cual transpilará
 El modo observador nos permite evitar estar escribiendo el comando en la consola de `tsc` para transpilar el código de TypeScript, ya que, este modo estará observando cada vez que se actualice un archivo de TypeScript y lo transpilará automáticamente. Para activar este modo lo puedes hacer con el siguiente comando `tsc --watch` o `tsc -w`.
 
 # Principios básicos de TypeScript
+## Booleans
