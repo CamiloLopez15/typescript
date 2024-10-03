@@ -15,4 +15,9 @@ Al tener este archivo nos permite ejecutar el comando `tsc` el cual transpilará
 El modo observador nos permite evitar estar escribiendo el comando en la consola de `tsc` para transpilar el código de TypeScript, ya que, este modo estará observando cada vez que se actualice un archivo de TypeScript y lo transpilará automáticamente. Para activar este modo lo puedes hacer con el siguiente comando `tsc --watch` o `tsc -w`.
 
 # Principios básicos de TypeScript
-## Booleans
+## Castear tipos
+En TypeScript castear tipos se usa para tratar un valor como un tipo determinado pero sin llegar a cambiarle el tipo a dicho valor, por ejemplo, imaginemos que tenemos una variable de tipo `any` y en determinado momento de la aplicación esa variable se desea tratar como un string, entonces podemos castear ese tipo en ese momento para que TypeScript lo tome como si fuese un string, existe dos formas de hacer eso.
+- La primera: `(variable as string).charAt(10)`
+- La Segunda: `<string>variable.charAt(10)`
+## Tupla
+Una tupla en TypeScript es un array al cual tu le defines el tipo de dato de cada posición del array, por ejemplo, si deseas que el primer valor sea un string y el segundo valor un number lo puedes asignar usando una tupla. La forma en como se hace eso es la siguiente `const hero: [string, number] = ["Spider-man", 100]`
