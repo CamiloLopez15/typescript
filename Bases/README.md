@@ -26,3 +26,6 @@ Una tupla en TypeScript es un array al cual tu le defines el tipo de dato de cad
 
 ## Enums
 Los enum sirven para enumerar valores, la forma más sencilla de entender es imaginar que tienes un objeto el cual tiene la propiedad `age` esta propiedad y resulta y pasa que para que funcione el programa a su totalidad necesitamos de esa propiedad. Entonces imagina que un día por X motivos esa propiedad pasa de llamarse `age` a `years`, ahora te tocaría cambiar en todos los lugares del código. La solución a esto es utilizar un `enum` el cual me permitiría enumerar las propiedades del objetos y definirle como valor el nombre de la propiedad del objeto principal, entonces cuando accedamos a la propiedad simplemente llamamos al `enum` y ya, en el caso que la propiedad cambie en el objeto principal simplemente la cambias en el `enum` y automáticamente se aplicará a todo el código.
+
+## Void
+El tipo Void se utiliza cuando una función no tiene un return explicito, sino que implícito. O sea, no hay un return dentro de la función.
