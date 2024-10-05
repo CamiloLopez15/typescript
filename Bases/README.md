@@ -29,3 +29,6 @@ Los enum sirven para enumerar valores, la forma más sencilla de entender es ima
 
 ## Void
 El tipo Void se utiliza cuando una función no tiene un return explicito, sino que implícito. O sea, no hay un return dentro de la función.
+
+## Never
+Es cuando una función no finaliza, o sea, no llega a ningún return implícito o explicito. Como por ejemplo, cuando arroja un error.
