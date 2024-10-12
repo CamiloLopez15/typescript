@@ -15,5 +15,11 @@
     }
 
     const wolwerine = new Xmen("Wolwerine", "Logan");
-    console.log(wolwerine);
+    // console.log(wolwerine);
+
+    const printName = (character: Mutant) => {
+        console.log(character.name);
+    };
+
+    // printName(wolwerine);
 })();

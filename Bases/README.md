@@ -71,6 +71,10 @@ Es cuando una función no finaliza, o sea, no llega a ningún return implícito 
 
 Al momento de crear clases en TypeScript este nos facilita funcionalidades que otro lenguajes de programación le facilitan al usuario, un ejemplo de esto es Java. Acá te enlistaré carácteristicas que nos fácilita TypeScript para crear clases tipadas.
 
+### Private constructor
+
+Sirve para definir un constructor para que solo puedas instanciar la clase dentro de la misma clase, esto se aplica principalmente al patron singleton.
+
 ### Abstract
 
 Una clase Abstract se define de la siguiente manera `abstract class Mutant {}`, estas clases sirven para definir comportamientos comunes para las otras clases, o sea, para crear clases extendidas con base a esta pero TypeScript no nos permite instanciarla.
@@ -92,7 +96,9 @@ Lo usamos al principio del nombre de una propiedad o método, sirve para especif
 Lo usamos al principio del nombre de una propiedad o método, sirve para especificar que no podrás acceder al método o propiedad de la clases desde fuera de esta una vez que esté _instanciada_ o no. La diferencia entre `private` y `protected` es que con protected podrás acceder a este método desde otra clases que extiendan la clase en donde está dicho método, en cambio, con `private` solo los puedes llamar dentro de la misma clase.
 
 ### Get
+
 Aunque `Get` es de JavaScript hago mención de el acá igualmente. Sirve para obtener una información de la clase y aplicarle lógica a esta antes de ser devuelta. Se llama como si fuese una propiedad y este siempre debe devolver algo. Por ejemplo, `wolwerine.fullName`.
 
 ### Set
+
 `Set` también es de JavaScript pero haremos la explicación de este acá. Sirve para definir una propiedad. Es una especie de método que solo puede recibir un valor como parámetros y nunca devuelve nada. Para usar un `set` debemos llamarlo como si fuese una propiedad e igualarlo a lo que necesitemos. Por ejemplo, `wolwerine.fullName = "Logan";`.
