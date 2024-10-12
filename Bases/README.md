@@ -35,6 +35,7 @@ Es una array de cadenas, en las cuales vamos a añadir las rutas, archivo o simi
 Es una array de cadenas, en las cuales vamos a añadir las rutas, archivo o similares de typeScript que queramos transpilar.
 
 ### OutFile
+
 Nos sirve para englobar todo el código de una aplicación en un solo archivo, cabe recalcar que para ello necesitamos especificar que `"module": "AMD"` para que pueda transpilar correctamente.
 
 # Modo Observador
@@ -65,3 +66,23 @@ El tipo Void se utiliza cuando una función no tiene un return explicito, sino q
 ## Never
 
 Es cuando una función no finaliza, o sea, no llega a ningún return implícito o explicito. Como por ejemplo, cuando arroja un error.
+
+## Clases
+
+Al momento de crear clases en TypeScript este nos facilita funcionalidades que otro lenguajes de programación le facilitan al usuario, un ejemplo de esto es Java. Acá te enlistaré carácteristicas que nos fácilita TypeScript para crear clases tipadas.
+
+### Public
+
+Lo usamos al principio del nombre de una propiedad o método, sirve para especificar que podrás acceder al método o propiedad de la clases desde fuera de esta una vez que esté _instanciada_
+
+### Private
+
+Lo usamos al principio del nombre de una propiedad o método, sirve para especificar que no podrás acceder al método o propiedad de la clases desde fuera de esta una vez que esté _instanciada_ o no.
+
+### Static
+
+Lo usamos al principio del nombre de una propiedad o método, sirve para especificar que puedes acceder a la propiedad o método desde fuera o dentro de la clases _sin tener que instanciarla_.
+
+### Protected
+
+Lo usamos al principio del nombre de una propiedad o método, sirve para especificar que no podrás acceder al método o propiedad de la clases desde fuera de esta una vez que esté _instanciada_ o no. La diferencia entre `private` y `protected` es que con protected podrás acceder a este método desde otra clases que extiendan la clase en donde está dicho método, en cambio, con `private` solo los puedes llamar dentro de la misma clase.
