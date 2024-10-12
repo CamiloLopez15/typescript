@@ -88,7 +88,7 @@ Lo usamos al principio del nombre de una propiedad o método, sirve para especif
 Lo usamos al principio del nombre de una propiedad o método, sirve para especificar que no podrás acceder al método o propiedad de la clases desde fuera de esta una vez que esté _instanciada_ o no. La diferencia entre `private` y `protected` es que con protected podrás acceder a este método desde otra clases que extiendan la clase en donde está dicho método, en cambio, con `private` solo los puedes llamar dentro de la misma clase.
 
 ### Get
-Aunque `Get` es de JavaScript hago mención de el acá igualmente. Sirve para obtener una información de la clase y aplicarle lógica a esta antes de ser devuelta. Se llama como si fuese una propiedad y este siempre debe devolver algo.
+Aunque `Get` es de JavaScript hago mención de el acá igualmente. Sirve para obtener una información de la clase y aplicarle lógica a esta antes de ser devuelta. Se llama como si fuese una propiedad y este siempre debe devolver algo. Por ejemplo, `wolwerine.fullName`
 
 ### Set
-`Set` también es de JavaScript pero haremos la explicación de este acá. Sirve para definir una propiedad. Es una especie de método que solo puede recibir un valor como parámetros y nunca devuelve nada. Para usar un `set` debemos llamarlo como si fuese una propiedad e igualarlo a lo que necesitemos.
+`Set` también es de JavaScript pero haremos la explicación de este acá. Sirve para definir una propiedad. Es una especie de método que solo puede recibir un valor como parámetros y nunca devuelve nada. Para usar un `set` debemos llamarlo como si fuese una propiedad e igualarlo a lo que necesitemos. Por ejemplo, `wolwerine.fullName = "Logan";`
