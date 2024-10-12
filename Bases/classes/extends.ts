@@ -27,9 +27,9 @@
         }
     }
 
-    const wolwerine = new Xmen("Wolwerine", "Logan", true);
+    // const wolwerine = new Xmen("Wolwerine", "Logan", true);
 
-    wolwerine.fullName = "Maluma"
-    console.log(wolwerine.fullName);
+    // wolwerine.fullName = "Maluma"
+    // console.log(wolwerine.fullName);
 
   })();
