@@ -17,11 +17,19 @@
             super(name, realtime);
         }
 
-        public getFullNameFromXmen() {
-          console.log();
+
+        get fullName(): string {
+            return `${this.name} - ${this.realtime}`;
+        }
+
+        set fullName(name: string) {
+          this.name = name;
         }
     }
 
     const wolwerine = new Xmen("Wolwerine", "Logan", true);
-    console.log(wolwerine);
-})();
+
+    wolwerine.fullName = "Maluma"
+    console.log(wolwerine.fullName);
+
+  })();

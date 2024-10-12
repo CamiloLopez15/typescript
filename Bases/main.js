@@ -34,11 +34,15 @@
             super(name, realtime);
             this.isMutant = isMutant;
         }
-        getFullNameFromXmen() {
-            console.log();
+        get fullName() {
+            return `${this.name} - ${this.realtime}`;
+        }
+        set fullName(name) {
+            this.name = name;
         }
     }
     const wolwerine = new Xmen("Wolwerine", "Logan", true);
-    console.log(wolwerine);
+    wolwerine.fullName = "Maluma";
+    console.log(wolwerine.fullName);
 })();
 //# sourceMappingURL=main.js.map
