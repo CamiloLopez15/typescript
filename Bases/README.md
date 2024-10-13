@@ -102,3 +102,12 @@ Aunque `Get` es de JavaScript hago mención de el acá igualmente. Sirve para ob
 ### Set
 
 `Set` también es de JavaScript pero haremos la explicación de este acá. Sirve para definir una propiedad. Es una especie de método que solo puede recibir un valor como parámetros y nunca devuelve nada. Para usar un `set` debemos llamarlo como si fuese una propiedad e igualarlo a lo que necesitemos. Por ejemplo, `wolwerine.fullName = "Logan";`.
+
+## Types e Interfaces
+Los tipos y las interfaces función similar, estas están encargadas de asegurarse que el código siga una esctructura, son como un mapa. Sin embargo, estas tienen una diferencias, por ejemplo con su forma de definirse y algunas caracteristicas.
+### Estructura
+La estructura de un tipo es: `type Person = {...}`
+La estructura de una interface es: `interface Person {...}`
+### Funcionamiento
+El `Type` sirve para definir tipos pero no te permite extenderlos.
+La `interface` sirve para definir tipos y poderlo extender como si fuesen clases. Digamos que las `interface` funcionan similar a una clase pero no crean ni instancian nada, solo definen tipos.
