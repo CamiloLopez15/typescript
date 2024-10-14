@@ -1,55 +1,28 @@
-# Basic WebSDK demo
+# Proyecto inicial - Curso de TypeScript
 
-[![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
+* Lo primero que debemos de hacer después de descargar el código es ejecutar el comando:
 
-This demo explains basic concepts and recommendations for Voximplant's Web SDK video conferencing.  
-The demo is based on Vanilla JS for the ease of working.
+```
+npm install
+```
+Ese comando descargará todos los módulos de node necesarios para ejecutar el proyecto.
 
-**Login Screen**
-![Login Screen Image](./readme-login.png)
 
-**Preparing for a call**
-![Preparing for a call](./readme-preparing.png)
+* Cuando termine de instalar los node_modules, entonces podermos ejecutar el proyecto de con el siguiente comando
 
-## This demo shows the following features
+```
+npm start
+```
+Para que eso funcione, recuerden que deben de ejecutar ese comando en el mismo directorio donde se encuentra el ```package.json```
 
-- Calls
-- Conferencing
-- Simulcast (SDK v4.5 and above)
-- Managing incoming media quality in Simulcast (SDK v4.5 and above)
-- Call transfers
-- DMTF sending
-- Screen sharing
-- Working with Voximplant.Hardware
+## Cambiar el puerto
+Por defecto, el puerto que configuré para este proyecto es el ```8081```, pero si necesitan cambiarlo porque pueda que ese puerto lo use su computadora, pueden cambiarlo abriendo el ```package.json``` >> scripts. Ahí verán la instrucción que lanza el servidor de desarrollo
 
-## How to send DTMF
-
-Use the keyboard/keypad `0`, `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`, `*`, `#` keys to send DTMF while the call/conference is active.
-
-## How to manage media quality with Simulcast
-
-Please read the [How to manage video quality](https://voximplant.com/docs/howtos/conference/simulcast) article in our documentation to learn about Simulcast usage.
-
-### How to start/stop an incoming media
-
-- To stop an incoming video/media, just click on the video frame that you do not want to receive
-- To start the incoming video/media, click on the video frame again
-
-### How to change an incoming video quality
-
-- To lower an incoming video resolution, perform a Ctrl+LeftClick or Alt+LeftClick on the target video
-- To reset an incoming video resolution, perform a Shift+Ctrl+LeftClick or Shift+Alt+LeftClick on the target video
-
-## How to change SDK version
-
-This demo uses the latest SDK version by default. If you want to change the SDK version to `voximplant-websdk@4.5`, find the following line in the index.html file:
-
-```html
-<script src="https://unpkg.com/voximplant-websdk"></script>
+```
+"start": "webpack serve --mode development --open --port=8081"
 ```
 
-And change it to:
+Simplemente cambian el puerto por el que ustedes necesiten y listo. (lógicamente graban los cambios antes de ejecutar el ```npm start``` nuevamente)
 
-```html
-<script src="https://unpkg.com/voximplant-websdk@beta"></script>
-```
+
+# curso-typescript
