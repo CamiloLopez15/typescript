@@ -116,3 +116,7 @@ La `interface` sirve para definir tipos y poderlo extender como si fuesen clases
 ## Namespace
 
 Sirve para crear entornos de trabajo en el cual definimos nuestro código y lo expornotamos para que puedan ser usados en otras partes de código, por lo general no es usado al menos que un framework te lo pida.
+
+## Generics
+
+Los tipos genericos lo usamos para definir un tipo que nosostros queramos a una plantilla base y podamos obtener un tipo correcto en base al tipo principal, estos tipos se lo podemos pasar a funciones, clases, interfaces, entre otros. Un ejemplo de esto es `const function = <T>(param: T): T => param` al momento de llamar la función hacemos esto `function<string>(param)` de esta forma al momento de retornarnos el valor la función sabemos que es un `string` y podremos tratarlo como tal.
