@@ -106,10 +106,14 @@ Aunque `Get` es de JavaScript hago mención de el acá igualmente. Sirve para ob
 ## Types e Interfaces
 
 Los tipos y las interfaces función similar, estas están encargadas de asegurarse que el código siga una esctructura, son como un mapa. Sin embargo, estas tienen una diferencias, por ejemplo con su forma de definirse y algunas caracteristicas.
+
 ### Estructura
+
 La estructura de un tipo es: `type Person = {...}`
 La estructura de una interface es: `interface Person {...}`
+
 ### Funcionamiento
+
 El `Type` sirve para definir tipos pero no te permite extenderlos.
 La `interface` sirve para definir tipos y poderlo extender como si fuesen clases. Digamos que las `interface` funcionan similar a una clase pero no crean ni instancian nada, solo definen tipos.
 
@@ -120,3 +124,9 @@ Sirve para crear entornos de trabajo en el cual definimos nuestro código y lo e
 ## Generics
 
 Los tipos genericos lo usamos para definir un tipo que nosostros queramos a una plantilla base y podamos obtener un tipo correcto en base al tipo principal, estos tipos se lo podemos pasar a funciones, clases, interfaces, entre otros. Un ejemplo de esto es `const function = <T>(param: T): T => param` al momento de llamar la función hacemos esto `function<string>(param)` de esta forma al momento de retornarnos el valor la función sabemos que es un `string` y podremos tratarlo como tal.
+
+## Decoradores.
+
+Los decoradores son funciones que se ejecutaran en el momento que se haga la compilación o transpirlación del código.
+### Factory Decorator
+Un `factory decorator` es un decorador que devuleve una función, lo cual nos permite enviarle parámetros.

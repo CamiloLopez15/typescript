@@ -1,6 +1,6 @@
-import { getPokemon } from "./generics/get-pokemon";
+import { Pokemon } from "./decorators/pokemon-class";
 
-getPokemon(1)
-    .then((res) => console.log(res.sprites.front_default))
-    .catch((rej) => console.log(rej))
-    .finally(() => console.log("GetPokemon finalizado"));
+
+const charmander = new Pokemon("Charmander")
+
+charmander.savePokemonToDB(800)
